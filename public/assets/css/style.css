@@ -653,3 +653,12 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
 .remove_link:focus{
     outline: none;
 }
+
+.pagination {
+    margin: 8px 15px 0px;
+}
+
+.pagination>li>a, .pagination>li>span {
+    padding: 1px 9px;
+}
+ 

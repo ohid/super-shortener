@@ -91,7 +91,6 @@
 								</thead>
 
 								<tbody id="tbody">
-
 									@if($urls->count())
 										@foreach($urls as $url)
 											<tr id="short_url_{{ $url->short_url }}">
@@ -121,17 +120,15 @@
 										</tr>
 									@endif
 
-
-
-
 								</tbody>
 							</table>	
 
-					<!-- 		<span class="pull-left number-of-pages">							
-							<small>Total <b class="total_links">0</b> links</small>
+							<span class="pull-left number-of-pages">							
+							<small>Total <b class="total_links">{{ Auth::user()->urls()->count() }}</b> links</small>
 							</span>
-							<ul class="pagination pull-right">
-							</ul> -->
+							<div class="paginations pull-right">
+								{!! $urls->render() !!}
+							</div>
 						</div>
 					</div>
 				@else

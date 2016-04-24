@@ -25,7 +25,7 @@ class ShortenerController extends Controller
     {
         if(\Auth::check()) :                
             $user = \Auth::user();
-            $urls = $user->urls()->orderBy('id', 'desc')->paginate(15);
+            $urls = $user->urls()->orderBy('id', 'desc')->paginate(5);
         endif;
 
         return view('shortener.home', compact('urls'));
