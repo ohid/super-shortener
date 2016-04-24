@@ -25,7 +25,7 @@ class ShortenerController extends Controller
     {
         if(\Auth::check()) :                
             $user = \Auth::user();
-            $urls = $user->urls()->orderBy('id', 'desc')->paginate(5);
+            $urls = $user->urls()->orderBy('id', 'desc')->paginate(10);
         endif;
 
         return view('shortener.home', compact('urls'));
@@ -53,25 +53,7 @@ class ShortenerController extends Controller
 
         $db_shortUrl = Url::where('short_url', $short_url)->first();
 
-        if($db_shortUrl) {
-            return \Response::json(['error' => 'error_occured'], 200);
-        } else {
-            if(\Auth::check()) {
-                $url = \Auth::user()->urls()->create([
-                    'url'       => $request->get('url'),
-                    'short_url' => $short_url
-                ]);
-            } else {
-                $url = Url::create([
-                    'url'       => $request->get('url'),
-                    'short_url' => $short_url
-                ]);
-            }
-
-            $urlText = str_limit($request->get('url'), 20);
-
-            return \Response::json(['url' => $url, 'hostUrl' => $hostUrl, 'urlText' => $urlText], 200);
-        }
+        return $this->createUrl($db_shortUrl, $short_url, $hostUrl, $request);
 
         
     }
@@ -197,6 +179,38 @@ class ShortenerController extends Controller
         $country = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='. $this->clientIp()));
         $country_code = $country['geoplugin_countryName'];
         return $country_code;
+    }
+    
+
+    /**
+     * Create shorturl
+     * @param  [type] $db_shortUrl [description]
+     * @param  [type] $short_url   [description]
+     * @param  [type] $hostUrl     [description]
+     * @param  [type] $request     [description]
+     * @return [type]              [description]
+     */
+    public function createUrl($db_shortUrl, $short_url, $hostUrl, $request) 
+    {
+        if($db_shortUrl) {
+            return \Response::json(['error' => 'error_occured'], 200);
+        } else {
+            if(\Auth::check()) {
+                $url = \Auth::user()->urls()->create([
+                    'url'       => $request->get('url'),
+                    'short_url' => $short_url
+                ]);
+            } else {
+                $url = Url::create([
+                    'url'       => $request->get('url'),
+                    'short_url' => $short_url
+                ]);
+            }
+
+            $urlText = str_limit($request->get('url'), 20);
+
+            return \Response::json(['url' => $url, 'hostUrl' => $hostUrl, 'urlText' => $urlText], 200);
+        }   
     }
 
 

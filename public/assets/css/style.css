@@ -240,7 +240,9 @@ a:focus{
         border-top: 0px solid #dfd7ca;
         border-bottom: 1px solid #dfd7ca;
 }
-
+.table>tbody>tr>td{
+    padding-left: 20px;
+}
 .table {
     table-layout: fixed;
 }
@@ -661,4 +663,3 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
 .pagination>li>a, .pagination>li>span {
     padding: 1px 9px;
 }
- 
