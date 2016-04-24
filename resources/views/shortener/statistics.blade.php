@@ -31,7 +31,7 @@
 		  			@if(count($url_hits))
 				  	   	<div class="col-md-12">
 				  	   		<div class="unique-hits">
-				  	   			<h4> {{ $option_count }} <br> <span>total hits</span></h4>
+				  	   			<h4> {{ $option_count }} <br> <span>unique hits</span></h4>
 				  	   		</div>
 				  	   		<div class="total-hits">
 				  	   			<h4> {{ $url->clicks }} <br> <span>total hits</span></h4>
