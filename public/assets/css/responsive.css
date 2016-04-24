@@ -1,0 +1,221 @@
+@media (max-width: 480px){
+
+.jumbotron {
+    padding: 45px 0px;
+}
+.no-graph {
+    padding: 20px 0px 20px 15px;
+    font-size: 11px;
+    height: 100px;
+    margin-top: 25px;
+}
+.card-short-url a {
+    font-size: 15px;
+}
+.jumbotron h3, 
+.jumbotron h4{
+        font-size: 26px;
+}
+.url_go_detail input.shorted_url {
+    width: 55%;
+}
+.url_go_detail button.url_copy_btn {
+    width: 45%;
+}
+.urlScreenshot{
+    display: none;
+}
+.shortbtn {
+    width: 33%;
+}
+#url.form-control {
+    width: 67%;
+}
+.user_form.profile_form input.form-control {
+    width: 56%;
+}
+.user_form.profile_form .btn-label {
+    width: 44%;
+}
+
+.loginms{
+    text-align: left;
+}
+.user_form .btn-label{
+    font-size: 10px;
+}
+
+.mb-hidden{
+    position: absolute;
+    left: -9999px;
+    top: 0px;
+    display: none;
+}
+thead th{
+    font-size: 12px;
+}
+tbody a{
+    font-size: 11px;
+}
+#chart_div{
+    height: 250px;
+}
+.lighten-card {
+    min-height: 45px;
+    margin-bottom: 20px;
+}
+
+.lighten-card.qr-code {
+    height: 120px;
+}
+.lighten-card.qr-code img {
+    width: 100px;
+    height: 100px;
+}
+.unique-hits h4, .total-hits h4 {
+    line-height: 15px;
+    font-size: 16px;
+    margin: 8px;
+}
+.unique-hits h4 span, .total-hits h4 span {
+    font-size: 10px;
+    color: #666;
+}
+.unique-hits,
+.total-hits {
+    width: 77px;
+    height: 50px;
+    padding: 0px 4px 4px;
+    top: -10px;
+    left: 42px;
+}
+.total-hits {
+    left: 135px;
+}
+
+.graph-row-right {
+    width: 100%;
+    margin-right: 0px;
+    float: none;
+    margin-top: 15px;
+}
+.graph-row-left{
+    float: none;
+}
+.row-main .graphs-row {
+    padding-right: 0px;
+    padding-top: 15px;
+}
+.charts{
+    height: 250px;
+}
+.graphs-right {
+    background-color: #fff;
+    padding: 15px 0px 1px;
+}
+.graphs-right ul {
+    margin-top: 30px;
+}
+
+.graphs-right li {
+    padding: 2px 8px;
+    margin-bottom: 4px;
+    border-bottom: 2px solid #4D9C26;
+    font-size: 12px;
+}
+.row-main h5 {
+    top: -29px;
+    left: 15px;
+    padding: 10px;
+    font-size: 12px
+}
+
+}
+
+
+@media (min-width: 480px) and (max-width: 767px){
+
+.jumbotron {
+    padding: 65px 0px;
+}
+
+.jumbotron h3, 
+.jumbotron h4{
+        font-size: 29px;
+}
+
+.lighten-card {
+    min-height: 45px;
+    margin-bottom: 20px;
+}
+
+.lighten-card.qr-code {
+    height: 150px;
+}
+.lighten-card.qr-code img {
+    width: 130px;
+    height: 130px;
+}
+.unique-hits h4, .total-hits h4 {
+    line-height: 17px;
+    font-size: 20px;
+}
+.unique-hits h4 span, .total-hits h4 span {
+    font-size: 12px;
+    color: #666;
+}
+.unique-hits,
+.total-hits {
+    width: 90px;
+    height: 60px;
+    padding: 0px 4px 4px;
+    top: -16px;
+}
+.total-hits {
+    left: 170px;
+}
+
+.row-main .graphs-row {
+    padding-right: 180px;
+}
+.graph-row-right {
+    width: 160px;
+    margin-right: -180px;
+}
+
+.charts{
+    height: 380px;
+}
+
+.graphs-right li {
+    padding: 0px 15px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #4D9C26;
+    font-size: 12px;
+}
+.row-main h5 {
+    top: -37px;
+    left: 21px;
+    padding: 14px;
+    font-size: 14px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+
+
+}
+
+@media (min-width: 969px) and (max-width: 1169px){
+
+.row-main .graphs-row {
+    padding-right: 250px;
+}
+.graph-row-right {
+    width: 220px;
+    margin-right: -250px;
+}
+
+
+}

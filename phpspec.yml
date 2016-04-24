@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: SShortener
+        psr4_prefix: SShortener
+        src_path: app
