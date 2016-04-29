@@ -1,4 +1,4 @@
-# Lara Todo
+# Super Shortener
 
 Super Shortener is a URL shortening app built on top of Laravel framework. 
 Super shortener shortens urls with ajax response and givs all statistics info about url in google chart graph.
