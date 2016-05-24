@@ -69,7 +69,7 @@ class ShortenerController extends Controller
             // Initialize variables
             $ip = $this->clientIp();
             $countryCode = $this->countryCode();
-            $referer = $_SERVER['HTTP_REFERER'];
+            $referer = @$_SERVER['HTTP_REFERER'];
             $user_agent = $_SERVER['HTTP_USER_AGENT'];
             $added = date('Y, m, d', strtotime('-1 month'));
 
