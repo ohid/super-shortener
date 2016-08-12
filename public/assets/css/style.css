@@ -4,6 +4,10 @@ a:focus{
 .shortbtn:focus{
 	outline: none;
 }
+
+
+
+
 .shorten_url_wrapper{
     margin-top: 20px;
     display: none;
