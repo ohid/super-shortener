@@ -8,7 +8,7 @@ Super shortener shortens urls with ajax response and givs all statistics info ab
 master
 
 ### Live Demo
-http://url.ohidul.com/
+http://url.dhrubok.website/
 
 ### Installation
 
@@ -59,9 +59,7 @@ ask me at ohidul.islam951@gmail.com
 # Screenshots
 
 Home page shortening url
-![Home page shortening url](https://f80b40e2f310199b7fee1416426c7e105de8fafa.googledrive.com/host/0B6SVI7iK7bjjOEFkNDJjXzBQRG8)
-
-![List of urls](https://37873425a3ec674ffd28d1839dd44501f2da12a5.googledrive.com/host/0B6SVI7iK7bjjelpHamNvV2RrTlE)
+![Home page shortening url](https://i.imgur.com/qCSbYtX.png)
 
 Statistics of url
-![Statistics of url](https://3a207e688e472a46f8d68d626e56840030f780bc.googledrive.com/host/0B6SVI7iK7bjjU1dIUS1mM05KaUE)
+![Statistics of url](https://i.imgur.com/IDT7iAH.png)
