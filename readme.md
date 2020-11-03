@@ -62,5 +62,4 @@ Home page shortening url
 ![Home page shortening url](https://i.imgur.com/qCSbYtX.png)
 
 Statistics of url
-![Statistics of url](https://i.imgur.com/IDT7iAH.png)
-![Statistics of url](https://i.imgur.com/oWYNnkR.png)
+![Statistics of url](https://i.imgur.com/1YdTpy1.png)
